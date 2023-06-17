@@ -55,3 +55,15 @@ def clean_scores(df, df_usuarios, df_peliculas):
   #rating entre 1 y 5
   df = df.loc[df["rating"].isin([1,2,3,4,5])]
   return df
+
+
+###########################
+#   COMIENZA MI PROGRAMA  # 
+###########################
+
+if __name__ == "__main__":
+  print("Hola, aca arranco")
+
+lista_total = load_all("personas.csv","trabajadores.csv","usuarios.csv","peliculas.csv","scores.csv")
+print(len(lista_total))
+
